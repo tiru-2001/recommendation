@@ -1,0 +1,110 @@
+.app__login-container {
+  height: 100vh;
+  background-color: var(--primary-color);
+  background-image: url("../../assets/images/loginmaBG.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .app__login-subcontainer {
+    box-shadow: 0px 0px 20px rgba(120, 120, 120, 0.5);
+    height: 80%;
+    width: 60%;
+
+    display: flex;
+    .left {
+      background: url("../../assets/images/signBg.jpg");
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 55%;
+
+      display: flex;
+      padding: 10px 30px;
+      align-items: center;
+      .title-container {
+        h1 {
+          color: var(--white-bg);
+          font-weight: 900;
+          font-size: 3rem;
+          padding: 10px 0px;
+        }
+        p {
+          padding: 10px 0px;
+          color: var(--white-bg);
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+    .right {
+      background-color: var(--white-bg);
+      width: 45%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .app__right-subContainer {
+        padding: 10px 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .app__sign-title {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          h1 {
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: rgb(70, 67, 67);
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: var(--light-gray);
+          }
+        }
+        .app__form {
+          .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input {
+              padding: 10px 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+              font-size: 1rem;
+              &:focus {
+                outline: 1px solid gray;
+                border: none;
+              }
+            }
+          }
+        }
+        .btn-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            font-size: 1.2rem;
+            padding: 10px 30px;
+            border-radius: 30px;
+
+            outline: none;
+            border: none;
+            cursor: pointer;
+            // background-image: linear-gradient(
+            //   to left,
+            //   rgb(21, 66, 110),
+            //   rgb(179, 178, 178)
+            // );
+            background-color: rgb(35, 65, 108);
+            color: white;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

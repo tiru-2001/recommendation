@@ -1,0 +1,112 @@
+.app__register-container {
+  height: 100vh;
+  background-color: var(--primary-color);
+  background-image: url("../../assets/images/RegisterRB.jpg");
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  .app__register-subcontainer {
+    box-shadow: 0px 0px 20px rgba(120, 120, 120, 0.5);
+    height: 80%;
+    width: 60%;
+    display: flex;
+    .right {
+      background: url("../../assets/images/RegisterB.jpg");
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 55%;
+
+      display: flex;
+      padding: 10px 30px;
+
+      .title-container {
+        h1 {
+          color: rgb(84, 83, 83);
+          font-weight: 900;
+          font-size: 3rem;
+          padding: 10px 0px;
+          align-items: center;
+          margin: 20px 0px;
+        }
+        p {
+          margin: 20px 0px;
+          padding: 10px 0px;
+          color: rgb(84, 83, 83);
+          font-size: 2rem;
+          font-weight: 500;
+        }
+      }
+    }
+    .left {
+      background-color: var(--white-bg);
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .app__left-subcontainer {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .app__signup-title {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          h1 {
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: rgb(70, 67, 67);
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: rgb(70, 67, 67);
+          }
+        }
+        .app__form {
+          .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input {
+              padding: 10px 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+              font-size: 1rem;
+              &:focus {
+                outline: 1px solid gray;
+                border: none;
+              }
+            }
+          }
+        }
+        .btn_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          .btn {
+            font-size: 1.2rem;
+            padding: 10px 30px;
+            border-radius: 30px;
+
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(115, 196, 220);
+            color: white;
+            text-align: center;
+          }
+
+          .subscribe {
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

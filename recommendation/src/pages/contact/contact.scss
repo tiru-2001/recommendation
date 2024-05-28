@@ -1,0 +1,95 @@
+.app__contact-container{
+   
+    height: 100vh;
+    background-color: var(--primary-color);
+    background-image: url("../../assets/images/loginmaBG.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .app__contact-subcontainer{
+    
+       box-shadow: 0px 0px 20px rgba(120,120,120,0.5);
+       
+        display: flex;
+        background: url("../../assets/images/ContactB.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 55%;
+        height: 70%;
+        padding: 50px 40px;
+    }
+    .left-container{
+       
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding: 10px 10px;
+        .conatct-title{
+            h1{
+                color:white;
+                font-weight: 900;
+                font-size: 3rem;
+                padding: 10px 0px;
+                margin: 10px;
+            }
+        }
+        .app__form-container{
+          
+            height: 60%;
+            .form-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                input{
+                    width: 100%;
+                    outline: none;
+                    padding: 10px 5px;
+                    border: none;
+                    border-radius: 15px;
+                    background-color: rgb(225, 227, 231);
+                  
+                    font-size: 1rem;
+                    &:focus{
+                        outline: 1px solid gray;
+                        border: none;
+                    }
+                
+                    }
+
+                    textarea{
+                        width: 100%;
+                        height: 80px;
+                        background-color: rgb(225, 227, 231);
+                        outline: none;
+                        border: none;
+                        font-size: 16px;
+                        border-radius: 15px;
+                        padding: 10px 5px;
+
+                  
+                }
+                button{
+                    padding: 10px;
+                    outline: none;
+                    border: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    background-color: rgb(21, 118, 228);
+                    color: white;
+                    width: 100px;
+                    cursor: pointer;
+                }
+                
+            }
+          
+        }
+    
+       
+    }
+
+}

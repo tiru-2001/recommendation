@@ -1,0 +1,29 @@
+.drop_down {
+  position: absolute;
+  z-index: 9;
+
+  background-color: snow;
+
+  top: 60px;
+  width: 75%;
+  left: 120px;
+  padding: 20px;
+  overflow-y: scroll;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    li {
+      list-style-type: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+      width: 100%;
+      padding: 10px;
+      &:hover {
+        background-color: salmon;
+      }
+    }
+  }
+}

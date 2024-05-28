@@ -1,0 +1,202 @@
+.home {
+  min-height: 100vh;
+
+  .features {
+    margin-top: -4px;
+    background-color: #a4dfa4;
+    h1 {
+      text-align: center;
+      font-size: 3.3rem;
+
+      color: black;
+    }
+    .features_subcontainer {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 50px;
+      gap: 20px;
+
+      .features-chidls {
+        text-align: center;
+        box-shadow: 0 0 25px rgba(128, 128, 128, 0.324);
+        background-color: #f8fcf9;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 15px;
+
+        .features_subheadings {
+          font-size: 1.2rem;
+        }
+        svg {
+          color: rgb(92, 184, 116);
+          height: 42px;
+          width: 42px;
+        }
+        .heading {
+          font-weight: bolder;
+          font-size: 2rem;
+          transition: all ease-in-out 700ms;
+          cursor: pointer;
+          &:hover {
+            color: rgb(92, 184, 116);
+          }
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .services {
+    background-color: #908afa;
+    margin-top: -4px;
+    .title {
+      h1 {
+        text-align: center;
+        font-size: 3.3rem;
+
+        color: black;
+      }
+    }
+    .services_subcontainer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      .services_childs {
+        padding: 10px 0px;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        background-color: rgb(193, 228, 243);
+        flex-basis: 30%;
+        border-radius: 5px;
+        box-shadow: 0 0 25px rgba(128, 128, 128, 0.324);
+
+        h1 {
+          font-size: 2rem;
+          text-transform: capitalize;
+          color: rgb(61, 66, 66);
+        }
+        p {
+          font-size: 1.2rem;
+          color: rgb(61, 66, 66);
+        }
+        svg {
+          color: rgb(223, 164, 47);
+          height: 42px;
+          width: 42px;
+        }
+      }
+    }
+  }
+  .membership {
+    margin-top: -4px;
+    background-color: #fab672;
+    .title {
+      h1 {
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 3.3rem;
+        color: rgb(68, 57, 57);
+      }
+    }
+    .membership_subcontainer {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      .membership_childs {
+        box-shadow: 0 0 25px rgba(128, 128, 128, 0.324);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: rgb(245, 213, 186);
+
+        .heading {
+          font-size: 2rem;
+          color: orangered;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .amount {
+          h1 {
+            font-size: 2.5rem;
+            color: #9d2525;
+          }
+        }
+        button {
+          width: 100%;
+          background: rgba(43, 96, 209, 0.76);
+          outline: none;
+          border: none;
+          text-align: center;
+          padding: 10px 20px;
+          font-size: 1rem;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  .introduction {
+    color: gray;
+    .title {
+      h1 {
+        text-align: center;
+        font-size: 3.3rem;
+        padding: 20px 0px;
+        margin-top: 20px;
+        color: black;
+      }
+    }
+    .introduction_subcontainer {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      .left {
+        flex-basis: 40%;
+
+        h2 {
+          font-size: 2rem;
+          text-transform: capitalize;
+          color: black;
+        }
+        p {
+          margin-top: 10px;
+          line-height: 1.5rem;
+          color: black;
+        }
+      }
+      .right {
+        height: 350px;
+        flex-basis: 30%;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
